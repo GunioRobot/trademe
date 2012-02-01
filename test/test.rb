@@ -11,7 +11,7 @@ require 'trademe'
 
 module Trademe::Testing
   def open_mock(file)
-    File.read(File.dirname(__FILE__) + "/mocks/" + file) 
+    File.read(File.dirname(__FILE__) + "/mocks/" + file)
   end
 end
 

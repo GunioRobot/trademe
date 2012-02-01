@@ -1,6 +1,6 @@
 = Ruby wrapper for the Trademe API
 
-API available at: {http://developer.trademe.co.nz}[http://developer.trademe.co.nz]  
+API available at: {http://developer.trademe.co.nz}[http://developer.trademe.co.nz]
 
 == Sample usage:
 
@@ -16,8 +16,8 @@ Upon return to callback url (with params[:oauth_verifier] set):
   if gateway.get_access_token(params[:oauth_verifier])
     session[:access_token] = gateway.access_token
   end
-  
-You are now verified! 
+
+You are now verified!
 
 Currently the OAuth system has been implemented so that searches are counted against the "Authenticated rate limit" as per the Trademe website.
 You can perform searches via the gateway if you have been authorized or not, but non authorized searches are limited to 60 requests per hour!
